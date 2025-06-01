@@ -1,0 +1,30 @@
+/* ...existing code... */
+
+/* Chef Image Styling for Home About Section */
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2rem auto;
+}
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    background: #fff;
+    display: block;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 576px) {
+    .about-image img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* ...existing code... */

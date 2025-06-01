@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore La Maison's exquisite menu featuring French culinary masterpieces crafted with seasonal ingredients">
+    <title>Menu | La Maison - Fine French Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="La Maison Restaurant Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="nav-cta"><a href="contact.html" class="btn btn-nav">Reservations</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section menu-hero">
+            <div class="menu-hero-content">
+                <h1>Our Menu</h1>
+                <p class="menu-subtitle">Seasonal French Cuisine</p>
+                <div class="divider"></div>
+                <p class="menu-description">Our dishes change with the seasons to showcase the finest ingredients at their peak</p>
+            </div>
+        </section>
+
+        <section class="section menu-container">
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="starters">Starters</button>
+                <button class="menu-tab" data-tab="mains">Main Courses</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+                <button class="menu-tab" data-tab="wine">Wine Pairings</button>
+            </div>
+
+            <div class="menu-category active" id="starters">
+                <div class="menu-category-header">
+                    <h2>Starters</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Foie Gras</h3>
+                                <p class="ingredients">Pan-seared duck liver, fig compote, brioche toast, micro greens</p>
+                            </div>
+                            <span class="price">€38</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/foie-gras.jpg" alt="Foie Gras">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Escargots</h3>
+                                <p class="ingredients">Burgundy snails, garlic-parsley butter, puff pastry</p>
+                            </div>
+                            <span class="price">€32</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/download.avif" alt="Escargots">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Salmon Rillettes</h3>
+                                <p class="ingredients">Smoked and fresh salmon, crème fraîche, chives, toasted baguette</p>
+                            </div>
+                            <span class="price">€28</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/salmon-rillettes-12.jpg" alt="Salmon Rillettes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="mains">
+                <div class="menu-category-header">
+                    <h2>Main Courses</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Duck Confit</h3>
+                                <p class="ingredients">Slow-cooked duck leg, garlic potatoes, seasonal vegetables, red wine reduction</p>
+                            </div>
+                            <span class="price">€42</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/duck-confit.jpg" alt="Duck Confit">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Beef Bourguignon</h3>
+                                <p class="ingredients">Braised beef cheek, pearl onions, mushrooms, red wine sauce, mashed potatoes</p>
+                            </div>
+                            <span class="price">€46</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/beef-bourguignon.jpg" alt="Beef Bourguignon">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Bouillabaisse</h3>
+                                <p class="ingredients">Mediterranean fish stew, saffron broth, rouille, croutons</p>
+                            </div>
+                            <span class="price">€48</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/bouillabaisse.jpg" alt="Bouillabaisse">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <div class="menu-category-header">
+                    <h2>Desserts</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Chocolate Soufflé</h3>
+                                <p class="ingredients">Warm chocolate soufflé, vanilla bean ice cream, cocoa nibs</p>
+                            </div>
+                            <span class="price">€18</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/chocolate-souffle.jpg" alt="Chocolate Soufflé">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Crème Brûlée</h3>
+                                <p class="ingredients">Vanilla bean custard, caramelized sugar, seasonal berries</p>
+                            </div>
+                            <span class="price">€16</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/creme-brulee.jpg" alt="Crème Brûlée">
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-text">
+                                <h3>Tarte Tatin</h3>
+                                <p class="ingredients">Caramelized apple tart, crème fraîche, cinnamon</p>
+                            </div>
+                            <span class="price">€17</span>
+                        </div>
+                        <div class="menu-item-image">
+                            <img src="images/tarte-tatin.jpg" alt="Tarte Tatin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="wine">
+                <div class="menu-category-header">
+                    <h2>Wine Pairings</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="wine-pairings">
+                    <div class="wine-category">
+                        <h3>White Wines</h3>
+                        <div class="wine-item">
+                            <h4>Chablis Premier Cru 2018</h4>
+                            <p class="wine-description">Domaine William Fèvre, Burgundy</p>
+                            <span class="price">€15/glass</span>
+                        </div>
+                        <div class="wine-item">
+                            <h4>Sancerre 2020</h4>
+                            <p class="wine-description">Domaine Vacheron, Loire Valley</p>
+                            <span class="price">€12/glass</span>
+                        </div>
+                    </div>
+
+                    <div class="wine-category">
+                        <h3>Red Wines</h3>
+                        <div class="wine-item">
+                            <h4>Pomerol 2016</h4>
+                            <p class="wine-description">Château Lafleur, Bordeaux</p>
+                            <span class="price">€22/glass</span>
+                        </div>
+                        <div class="wine-item">
+                            <h4>Châteauneuf-du-Pape 2017</h4>
+                            <p class="wine-description">Domaine du Vieux Télégraphe, Rhône</p>
+                            <span class="price">€18/glass</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dietary-notes">
+            <div class="notes-container">
+                <h3>Dietary Notes</h3>
+                <p>Please inform your server of any allergies or dietary restrictions. We're happy to accommodate gluten-free, vegetarian, and other dietary needs with advance notice.</p>
+                <p>Our menu changes seasonally to ensure the freshest ingredients. Prices are subject to change.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="La Maison Logo" class="logo">
+                <p>French culinary excellence since 2005</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Paris</p>
+                <p><i class="fas fa-phone-alt"></i> +92 1 2345 6789</p>
+                <p><i class="fas fa-envelope"></i> contact@lamaison.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 La Maison. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="accessibility-panel">
+        <button id="textIncrease" aria-label="Increase text size">A+</button>
+        <button id="textReset" aria-label="Reset text size">A</button>
+        <button id="textDecrease" aria-label="Decrease text size">A-</button>
+        <button id="invertColors" aria-label="Toggle high contrast mode">
+        <i class="fas fa-adjust"></i>
+  </button>
+  <button id="bigCursor" aria-label="Toggle large cursor">
+    <i class="fas fa-mouse-pointer"></i>
+  </button>
+</div>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+<header role="banner">
+<nav role="navigation">
+<main id="main-content" role="main">
+<footer role="contentinfo">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

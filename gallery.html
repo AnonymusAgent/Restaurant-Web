@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the visual journey of La Maison through our gallery showcasing exquisite dishes and elegant ambiance">
+    <title>Gallery | La Maison - Fine French Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="La Maison Restaurant Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section gallery-section">
+            <div class="section-header">
+                <h1>Our Gallery</h1>
+                <p class="section-subtitle">A visual journey through culinary excellence</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <div class="gallery-grid" id="lightgallery">
+                <a href="images/dish1-large.jpg" class="gallery-item food" data-sub-html="<h4>Foie Gras with Fig Compote</h4><p>Our signature starter with seasonal fruits</p>">
+                    <img src="images/foie-gras.jpg" alt="Foie Gras with Fig Compote">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Foie Gras</h3>
+                    </div>
+                </a>
+                
+                <a href="images/interior1-large.jpg" class="gallery-item interior" data-sub-html="<h4>Main Dining Room</h4><p>Elegant Parisian-inspired decor</p>">
+                    <img src="images/Interior-Design-YOD-Group-Terra-Ukraine-idx230101_boy_Hotel_Dining01.jpg" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Dining Room</h3>
+                    </div>
+                </a>
+                
+                <a href="images/dish2-large.jpg" class="gallery-item food" data-sub-html="<h4>Duck Confit</h4><p>Traditional French preparation with seasonal vegetables</p>">
+                    <img src="images/Duck-Confit-photo-_8.jpg" alt="Duck Confit">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Duck Confit</h3>
+                    </div>
+                </a>
+                
+                <a href="images/event1-large.jpg" class="gallery-item events" data-sub-html="<h4>Wine Tasting Evening</h4><p>Monthly wine pairing events</p>">
+                    <img src="images/genericImage-websiteLogo-240532-1730143333.5766-0.bNh-rL.png" alt="Wine Tasting Event">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Wine Tasting</h3>
+                    </div>
+                </a>
+                
+                <a href="images/dish3-large.jpg" class="gallery-item food" data-sub-html="<h4>Chocolate Soufflé</h4><p>Classic dessert with vanilla bean ice cream</p>">
+                    <img src="images/images.jpeg" alt="Chocolate Soufflé">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Chocolate Soufflé</h3>
+                    </div>
+                </a>
+                
+                <a href="images/interior2-large.jpg" class="gallery-item interior" data-sub-html="<h4>Private Dining Room</h4><p>Perfect for special occasions</p>">
+                    <img src="images/Lisboeta-Adega-private-room-website_Z21dmfs.webp" alt="Private Dining Room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Private Dining</h3>
+                    </div>
+                </a>
+                
+                <a href="images/dish4-large.jpg" class="gallery-item food" data-sub-html="<h4>Seafood Platter</h4><p>Fresh catch of the day with citrus dressing</p>">
+                    <img src="images/grilled-seafood-platter-81225-1.jpeg" alt="Seafood Platter">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Seafood Platter</h3>
+                    </div>
+                </a>
+                
+                <a href="images/event2-large.jpg" class="gallery-item events" data-sub-html="<h4>Chef's Table Experience</h4><p>Interactive dining at our kitchen counter</p>">
+                    <img src="images/101606_004_Conference-Ctr.jpg.2.2x.generic.jpg" alt="Chef's Table">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h3>Chef's Table</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="La Maison Logo" class="logo">
+                <p>French culinary excellence since 2005</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Paris</p>
+                <p><i class="fas fa-phone-alt"></i> +92 1 2345 6789</p>
+                <p><i class="fas fa-envelope"></i> contact@lamaison.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 La Maison. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="accessibility-panel">
+        <button id="textIncrease" aria-label="Increase text size">A+</button>
+        <button id="textReset" aria-label="Reset text size">A</button>
+        <button id="textDecrease" aria-label="Decrease text size">A-</button>
+        <button id="invertColors" aria-label="Toggle high contrast mode">
+        <i class="fas fa-adjust"></i>
+    </button>
+  <button id="bigCursor" aria-label="Toggle large cursor">
+    <i class="fas fa-mouse-pointer"></i>
+  </button>
+</div>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
+<nav role="navigation">
+<main id="main-content" role="main">
+<footer role="contentinfo">
+
+    <!-- Lightgallery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
