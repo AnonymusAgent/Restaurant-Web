@@ -1490,7 +1490,7 @@ header { background:rgba(33,25,21,.95); }
 .nav-links a { font-size:.88rem; }
 .nav-links a::after { background:var(--secondary); }
 .nav-links a[aria-current="page"] { color:#e2c9a1; }
-.nav-links .btn-nav { background:var(--secondary); color:var(--dark); border:0; padding:.7rem 1.35rem; }
+.nav-links .btn-nav { background:var(--primary); color:#fff; border:0; padding:.7rem 1.35rem; }
 .btn { border-radius:3px; letter-spacing:.03em; }
 .btn-primary { background:var(--primary); }
 .btn-primary:hover { background:var(--primary-light); }
