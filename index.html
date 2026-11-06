@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Maison - Michelin-starred French restaurant offering exquisite dining experiences in Paris">
+    <meta name="description" content="La Maison - A welcoming Parisian dining room serving thoughtful seasonal French cuisine">
     <title>La Maison | Fine French Dining | Paris</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chef.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,36 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
-        <nav class="navbar">
-            <img src="images/logo.png" alt="La Maison Restaurant Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li class="nav-cta"><a href="contact.html" class="btn btn-nav">Reservations</a></li>
-            </ul>
-            <button class="hamburger-menu" aria-label="Open Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </nav>
+        <nav class="navbar" aria-label="Main navigation"><a href="index.html" class="brand-link"><img src="images/logo.svg" alt="La Maison, Paris" class="logo"></a><button class="hamburger-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li class="nav-cta"><a href="reservations.html" class="btn btn-nav">Reserve</a></li></ul></nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>La Maison</h1>
-                    <p class="hero-subtitle">Michelin-starred French Cuisine</p>
+                    <p class="hero-subtitle">Seasonal French Cuisine</p>
                     <div class="hero-divider"></div>
                     <p class="hero-description">Experience the art of French gastronomy in an elegant Parisian setting</p>
                 </div>
                 <div class="hero-cta">
                     <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
-                    <a href="contact.html" class="btn btn-secondary">Book a Table</a>
+                    <a href="reservations.html" class="btn btn-secondary">Book a Table</a>
                 </div>
             </div>
             <a href="#about" class="scroll-down" aria-label="Scroll down">
@@ -57,7 +45,7 @@
                 <div class="about-content">
                     <h2 class="section-title">Culinary Excellence Since 2005</h2>
                     <div class="divider"></div>
-                    <p>Founded by Chef Pierre Dubois, La Maison brings authentic French cuisine to the heart of Paris. Our Michelin-starred restaurant combines traditional techniques with innovative flavors, using only the finest seasonal ingredients.</p>
+                    <p>Founded by Chef Pierre Dubois, La Maison brings authentic French cuisine to the heart of Paris. Our kitchen pairs classical technique with contemporary creativity, using seasonal ingredients from trusted suppliers.</p>
                     <a href="about.html" class="btn btn-outline">Our Story</a>
                 </div>
                 <div class="about-image">
@@ -102,6 +90,8 @@
                 </div>
             </div>
         </section>
+
+        <section class="section home-experiences"><div class="section-header"><p class="eyebrow">MORE THAN A MEAL</p><h2 class="section-title">Make an evening of it</h2><div class="divider"></div><p>Come behind the scenes, gather in private, or simply find your table.</p></div><div class="home-experience-grid"><a href="events.html"><span>01</span><h3>Events & tastings</h3><p>Small gatherings, chef-led suppers and French wine, poured with a story.</p><b>Explore experiences →</b></a><a href="private-dining.html"><span>02</span><h3>Private dining</h3><p>Your own Parisian salon for a celebration or dinner worth remembering.</p><b>Discover the salon →</b></a><a href="reservations.html"><span>03</span><h3>Reserve a table</h3><p>Choose a date, tell us what you’re celebrating and let us take it from there.</p><b>Plan your visit →</b></a></div></section>
 
         <section class="section menu-highlight">
             <div class="section-header">
@@ -158,7 +148,7 @@
                         </div>
                     </div>
                     <div class="testimonial-author">
-                        <img src="images/guest-1.jpg" alt="Sophie Martin">
+                        <img src="images/guest-1.svg" alt="Sophie Martin">
                         <h4>Sophie Martin</h4>
                         <p>Paris, France</p>
                     </div>
@@ -176,7 +166,7 @@
                         </div>
                     </div>
                     <div class="testimonial-author">
-                        <img src="images/guest-2.jpg" alt="Thomas Johnson">
+                        <img src="images/guest-2.svg" alt="Thomas Johnson">
                         <h4>Thomas Johnson</h4>
                         <p>New York, USA</p>
                     </div>
@@ -190,8 +180,8 @@
                 <p>Reserve your table today and discover why La Maison is Paris's most celebrated dining destination.</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary">Book Now</a>
-                    <a href="tel:+92123456789" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> +92 1 2345 6789
+                    <a href="tel:+33142605514" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> +33 1 42 60 55 14
                     </a>
                 </div>
             </div>
@@ -201,32 +191,21 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo-white.png" alt="La Maison Logo" class="logo">
-                <p>French culinary excellence since 2005</p>
+                <img src="images/logo-white.svg" alt="La Maison Logo" class="logo">
+                <p>French culinary excellence, served with warmth.</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li><a href="private-dining.html">Private dining</a></li><li><a href="reservations.html">Reservations</a></li></ul></div>
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Paris</p>
-                <p><i class="fas fa-phone-alt"></i> +92 1 2345 6789</p>
-                <p><i class="fas fa-envelope"></i> contact@lamaison.com</p>
-                <p><i class="fas fa-clock"></i> Tue-Sat: 12PM-10:30PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> 12 rue des Archives, Paris</p>
+                <p><i class="fas fa-phone-alt"></i> +33 1 42 60 55 14</p>
+                <p><i class="fas fa-envelope"></i> bonjour@lamaison.paris</p>
+                <p><i class="fas fa-clock"></i> Tue–Sat: 12PM–2PM & 7PM–9:30PM</p>
             </div>
             <div class="footer-social">
-                <h4>Follow Us</h4>
+                <h4>Get in touch</h4>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:bonjour@lamaison.paris" aria-label="Email La Maison"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="newsletter">
                     <h4>Newsletter</h4>
@@ -240,7 +219,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 La Maison. All rights reserved.</p>
+            <p>© 2026 Webloom LLC. All rights reserved. La Maison is a project of Webloom LLC.</p>
         </div>
     </footer>
 
@@ -256,12 +235,9 @@
   </button>
 </div>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header role="banner">
-<nav role="navigation">
-<main id="main-content" role="main">
-<footer role="contentinfo">
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>

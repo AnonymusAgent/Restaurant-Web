@@ -3,31 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact La Maison - Michelin-starred French restaurant in Paris. Make reservations or send us your inquiries.">
+    <meta name="description" content="Contact La Maison - Get in touch with La Maison in Paris to plan a visit or send an enquiry.">
     <title>Contact | La Maison - Fine French Dining</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
-        <nav class="navbar">
-            <img src="images/logo.png" alt="La Maison Restaurant Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-            <button class="hamburger-menu" aria-label="Open Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </nav>
+        <nav class="navbar" aria-label="Main navigation"><a href="index.html" class="brand-link"><img src="images/logo.svg" alt="La Maison, Paris" class="logo"></a><button class="hamburger-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li class="nav-cta"><a href="reservations.html" class="btn btn-nav">Reserve</a></li></ul></nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="section contact-section">
             <div class="section-header">
                 <h1>Contact Us</h1>
@@ -48,7 +37,7 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+92 1 2345 6789">
+                            <input type="tel" id="phone" name="phone" placeholder="+33 1 42 60 55 14">
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
@@ -74,16 +63,16 @@
                 <div class="contact-info">
                     <div class="info-card">
                         <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
-                        <p>123 Gourmet Street<br>75001 Paris, France</p>
+                        <p>123 Gourmet Street<br>75004 Paris, France</p>
                     </div>
-                    
+
                     <div class="info-card">
                         <h3><i class="fas fa-phone-alt"></i> Contact Details</h3>
-                        <p><strong>Reservations:</strong> +92 1 2345 6789</p>
-                        <p><strong>General Inquiries:</strong> +92 1 2345 6790</p>
-                        <p><strong>Email:</strong> contact@lamaison.com</p>
+                        <p><strong>Reservations:</strong> +33 1 42 60 55 14</p>
+                        <p><strong>General Inquiries:</strong> +33 1 42 60 55 14</p>
+                        <p><strong>Email:</strong> bonjour@lamaison.paris</p>
                     </div>
-                    
+
                     <div class="info-card">
                         <h3><i class="far fa-clock"></i> Opening Hours</h3>
                         <p><strong>Tuesday - Saturday:</strong><br>
@@ -91,13 +80,13 @@
                         6:30 PM - 10:30 PM (Dinner)</p>
                         <p><strong>Sunday & Monday:</strong> Closed</p>
                     </div>
-                    
+
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937596!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1623251234567!5m2!1sen!2sfr" 
-                                width="100%" 
-                                height="300" 
-                                style="border:0;" 
-                                allowfullscreen="" 
+                        <iframe src="https://maps.google.com/maps?q=12%20rue%20des%20Archives%2C%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                allowfullscreen=""
                                 loading="lazy">
                         </iframe>
                     </div>
@@ -109,30 +98,20 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo-white.png" alt="La Maison Logo" class="logo">
+                <img src="images/logo-white.svg" alt="La Maison Logo" class="logo">
                 <p>French culinary excellence since 2005</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li><a href="private-dining.html">Private dining</a></li><li><a href="reservations.html">Reservations</a></li></ul></div>
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Paris</p>
-                <p><i class="fas fa-phone-alt"></i> +92 1 2345 6789</p>
-                <p><i class="fas fa-envelope"></i> contact@lamaison.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 12 rue des Archives, Paris</p>
+                <p><i class="fas fa-phone-alt"></i> +33 1 42 60 55 14</p>
+                <p><i class="fas fa-envelope"></i> bonjour@lamaison.paris</p>
             </div>
             <div class="footer-social">
-                <h4>Follow Us</h4>
+                <h4>Get in touch</h4>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:bonjour@lamaison.paris" aria-label="Email La Maison"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="newsletter">
                     <h4>Newsletter</h4>
@@ -146,7 +125,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 La Maison. All rights reserved.</p>
+            <p>© 2026 Webloom LLC. All rights reserved. La Maison is a project of Webloom LLC.</p>
         </div>
     </footer>
 
@@ -162,13 +141,10 @@
   </button>
 </div>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
 
 
-<header role="banner">
-<nav role="navigation">
-<main id="main-content" role="main">
-<footer role="contentinfo">
+
+
 
     <script src="js/script.js"></script>
 </body>

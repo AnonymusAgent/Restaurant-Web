@@ -6,29 +6,17 @@
     <meta name="description" content="Explore La Maison's exquisite menu featuring French culinary masterpieces crafted with seasonal ingredients">
     <title>Menu | La Maison - Fine French Dining</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
-        <nav class="navbar">
-            <img src="images/logo.png" alt="La Maison Restaurant Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li class="nav-cta"><a href="contact.html" class="btn btn-nav">Reservations</a></li>
-            </ul>
-            <button class="hamburger-menu" aria-label="Open Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </nav>
+        <nav class="navbar" aria-label="Main navigation"><a href="index.html" class="brand-link"><img src="images/logo.svg" alt="La Maison, Paris" class="logo"></a><button class="hamburger-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="menu.html" aria-current="page">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li class="nav-cta"><a href="reservations.html" class="btn btn-nav">Reserve</a></li></ul></nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="section menu-hero">
             <div class="menu-hero-content">
                 <h1>Our Menu</h1>
@@ -51,7 +39,7 @@
                     <h2>Starters</h2>
                     <div class="divider"></div>
                 </div>
-                
+
                 <div class="menu-items-grid">
                     <div class="menu-item">
                         <div class="menu-item-content">
@@ -99,7 +87,7 @@
                     <h2>Main Courses</h2>
                     <div class="divider"></div>
                 </div>
-                
+
                 <div class="menu-items-grid">
                     <div class="menu-item">
                         <div class="menu-item-content">
@@ -147,7 +135,7 @@
                     <h2>Desserts</h2>
                     <div class="divider"></div>
                 </div>
-                
+
                 <div class="menu-items-grid">
                     <div class="menu-item">
                         <div class="menu-item-content">
@@ -195,7 +183,7 @@
                     <h2>Wine Pairings</h2>
                     <div class="divider"></div>
                 </div>
-                
+
                 <div class="wine-pairings">
                     <div class="wine-category">
                         <h3>White Wines</h3>
@@ -240,35 +228,25 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo-white.png" alt="La Maison Logo" class="logo">
+                <img src="images/logo-white.svg" alt="La Maison Logo" class="logo">
                 <p>French culinary excellence since 2005</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="events.html">Experiences</a></li><li><a href="private-dining.html">Private dining</a></li><li><a href="reservations.html">Reservations</a></li></ul></div>
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Paris</p>
-                <p><i class="fas fa-phone-alt"></i> +92 1 2345 6789</p>
-                <p><i class="fas fa-envelope"></i> contact@lamaison.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 12 rue des Archives, Paris</p>
+                <p><i class="fas fa-phone-alt"></i> +33 1 42 60 55 14</p>
+                <p><i class="fas fa-envelope"></i> bonjour@lamaison.paris</p>
             </div>
             <div class="footer-social">
-                <h4>Follow Us</h4>
+                <h4>Get in touch</h4>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:bonjour@lamaison.paris" aria-label="Email La Maison"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 La Maison. All rights reserved.</p>
+            <p>© 2026 Webloom LLC. All rights reserved. La Maison is a project of Webloom LLC.</p>
         </div>
     </footer>
     <div class="accessibility-panel">
@@ -283,13 +261,10 @@
   </button>
 </div>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
 
 
-<header role="banner">
-<nav role="navigation">
-<main id="main-content" role="main">
-<footer role="contentinfo">
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
