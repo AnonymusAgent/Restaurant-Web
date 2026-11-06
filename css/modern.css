@@ -1,5 +1,10 @@
 /* Theme system, readability controls, consent UI, 3D polish and admin dashboard. */
-:root { color-scheme:light; --reading-scale:1; --secondary:#77572f; scroll-padding-top:6rem; }
+:root {
+  color-scheme:light; --reading-scale:1.0625; scroll-padding-top:6rem;
+  --primary:#71352d; --primary-light:#8a443a; --secondary:#60461f;
+  --dark:#171512; --light:#fcfbf8; --text:#292522; --text-light:#514a44; --white:#fff;
+  --overlay:rgba(20,17,15,.68); --shadow:0 14px 40px rgba(37,27,21,.11);
+}
 html { font-size:calc(100% * var(--reading-scale)); scroll-behavior:smooth; }
 body { font-size:1rem; line-height:1.75; transition:background-color .25s ease,color .25s ease; }
 body,body input,body select,body textarea { line-height:1.75; }
@@ -8,37 +13,38 @@ button { font:inherit; }
 :focus-visible { outline:3px solid #e0b46d!important; outline-offset:3px!important; }
 .skip-link:focus { z-index:20000; }
 
-/* Dark theme uses warm charcoal surfaces and high-contrast cream type. */
+/* Minimal dark theme: neutral charcoal surfaces, crisp type, one restrained accent. */
 html[data-theme="dark"] body {
-  color-scheme:dark; --dark:#f5eee5; --light:#1b1917; --text:#f2ebe3; --text-light:#cec2b7; --white:#fffefa;
-  --primary:#d27d6d; --primary-light:#e19b8b; --secondary:#e1bd8c; --overlay:rgba(10,8,7,.74);
-  background:#1b1917; color:#f2ebe3;
+  color-scheme:dark; --dark:#f1f2f2; --light:#101112; --text:#f1f2f2; --text-light:#c2c5c7; --white:#fff;
+  --primary:#d58a7e; --primary-light:#e2a497; --secondary:#d5bc92; --overlay:rgba(8,9,10,.78);
+  background:#101112; color:#f1f2f2;
 }
-html[data-theme="dark"] header { background:rgba(22,19,17,.97); }
+header .logo { filter:brightness(0) invert(1); }
+html[data-theme="dark"] header { background:rgba(16,17,18,.97); }
 html[data-theme="dark"] .section:not(.hero),html[data-theme="dark"] .about-preview,html[data-theme="dark"] .features,
 html[data-theme="dark"] .menu-highlight,html[data-theme="dark"] .testimonials,html[data-theme="dark"] .contact-section,
-html[data-theme="dark"] .gallery-section,html[data-theme="dark"] .menu-container,html[data-theme="dark"] .about-section { background:#1b1917; color:#f2ebe3; }
+html[data-theme="dark"] .gallery-section,html[data-theme="dark"] .menu-container,html[data-theme="dark"] .about-section { background:#101112; color:#f1f2f2; }
 html[data-theme="dark"] .feature-card,html[data-theme="dark"] .menu-item,html[data-theme="dark"] .testimonial,
 html[data-theme="dark"] .contact-form,html[data-theme="dark"] .info-card,html[data-theme="dark"] .award-card,
 html[data-theme="dark"] .booking-form,html[data-theme="dark"] .event-card,html[data-theme="dark"] .home-experience-grid a,
 html[data-theme="dark"] .reading-tools-panel,html[data-theme="dark"] .admin-card,html[data-theme="dark"] .admin-login-card,
-html[data-theme="dark"] .admin-panel { background:#292421; color:#f2ebe3; border-color:#51473f; }
-html[data-theme="dark"] .menu-item-content,html[data-theme="dark"] .menu-item-image { background:#292421; }
+html[data-theme="dark"] .admin-panel { background:#202224; color:#f1f2f2; border-color:#3b3e41; }
+html[data-theme="dark"] .menu-item-content,html[data-theme="dark"] .menu-item-image { background:#202224; }
 html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4,
-html[data-theme="dark"] .section-title,html[data-theme="dark"] .menu-item h3 { color:#f5eee5; }
+html[data-theme="dark"] .section-title,html[data-theme="dark"] .menu-item h3 { color:#f1f2f2; }
 html[data-theme="dark"] p,html[data-theme="dark"] label,html[data-theme="dark"] li { color:inherit; }
 html[data-theme="dark"] .feature-card p,html[data-theme="dark"] .event-card p,html[data-theme="dark"] .home-experience-grid p,
-html[data-theme="dark"] .testimonial-content p,html[data-theme="dark"] .about-content p { color:#d5c9be; }
-html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea { background:#1b1917!important; color:#f5eee5!important; border-color:#6a5b50!important; }
-html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder { color:#c4b9ae; opacity:1; }
+html[data-theme="dark"] .testimonial-content p,html[data-theme="dark"] .about-content p { color:#c8cbcd; }
+html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea { background:#151719!important; color:#f1f2f2!important; border-color:#55595d!important; }
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder { color:#c2c5c7; opacity:1; }
 input::placeholder,textarea::placeholder { color:#655a52; opacity:1; }
-html[data-theme="dark"] .home-experiences,html[data-theme="dark"] .detail-card { background:#24201d; color:#f2ebe3; }
-html[data-theme="dark"] .reservation-cta,html[data-theme="dark"] .experience-band { background:#120f0d; }
-html[data-theme="dark"] .gallery-filter button,html[data-theme="dark"] .menu-tab { color:#f5eee5; }
-html[data-theme="dark"] .accessibility-panel { background:#211c18; }
-html[data-theme="dark"] .btn-primary { background:#a95246; color:#fff; }
-html[data-theme="dark"] .nav-links .btn-nav { color:#211915; }
-html[data-theme="dark"] .text-link { color:#e1bd8c; }
+html[data-theme="dark"] .home-experiences,html[data-theme="dark"] .detail-card { background:#191b1d; color:#f2ebe3; }
+html[data-theme="dark"] .reservation-cta,html[data-theme="dark"] .experience-band { background:#111214; }
+html[data-theme="dark"] .gallery-filter button,html[data-theme="dark"] .menu-tab { color:#f1f2f2; }
+html[data-theme="dark"] .accessibility-panel { background:#151719; }
+html[data-theme="dark"] .btn-primary { background:#865149; color:#fff; }
+html[data-theme="dark"] .nav-links .btn-nav { background:#d5bc92; color:#141618; }
+html[data-theme="dark"] .text-link { color:#d5bc92; }
 
 /* Contrast mode changes the palette rather than relying on color inversion. */
 html.high-contrast-mode { --text:#111; --text-light:#222; --dark:#111; --light:#fff; --white:#fff; --primary:#650000; --primary-light:#4f0000; --secondary:#543600; }
@@ -135,10 +141,21 @@ html[data-theme="dark"] .privacy-review-note { background:#292421; }
 .admin-caption { margin-top:15px; font-size:.86rem; color:#655a52; }
 html[data-theme="dark"] .admin-page { background:#1a1715; color:#f2ebe3; }
 html[data-theme="dark"] .admin-page .admin-login-card,html[data-theme="dark"] .admin-page .admin-panel,html[data-theme="dark"] .admin-page .admin-card { background:#292421; color:#f2ebe3; border-color:#51473f; }
-html[data-theme="dark"] .admin-page input,html[data-theme="dark"] .admin-page select { background:#1b1917!important; color:#f5eee5!important; }
+html[data-theme="dark"] .admin-page input,html[data-theme="dark"] .admin-page select { background:#1b1917!important; color:#f1f2f2!important; }
 html[data-theme="dark"] .admin-page .admin-card p,html[data-theme="dark"] .admin-page .admin-caption,html[data-theme="dark"] .admin-page .admin-topbar p,html[data-theme="dark"] .admin-page .admin-login-card p { color:#d5c9be; }
 html[data-theme="dark"] .admin-page .admin-error,html[data-theme="dark"] .admin-page .admin-notice { color:#ffb2a8!important; }
 html[data-theme="dark"] .admin-page .admin-table th { color:#f1d8b6; }
 
 @media(max-width:800px) { .cookie-dialog { grid-template-columns:1fr; gap:12px; } .admin-metrics { grid-template-columns:repeat(2,1fr); } .admin-grid { grid-template-columns:1fr; } }
 @media(max-width:520px) { .admin-metrics { grid-template-columns:1fr 1fr; gap:9px; } .admin-card { padding:15px; } .admin-card strong { font-size:1.7rem; } .admin-topbar { align-items:flex-start; flex-direction:column; } .accessibility-panel { right:12px; bottom:12px; } .cookie-dialog { inset:auto 8px 8px; } }
+/* Extra contrast fixes for frequently missed muted copy and the display panel. */
+:focus-visible { outline-color:#5b3b18!important; }
+html[data-theme="dark"] :focus-visible { outline-color:#f0d79e!important; }
+html[data-theme="dark"] .booking-aside { background:#202224; color:#f1f2f2; }
+html[data-theme="dark"] .home-experience-grid { background:#3b3e41; }
+html[data-theme="dark"] footer,html[data-theme="dark"] .site-footer { background:#101112!important; color:#f1f2f2; }
+html[data-theme="dark"] .reading-tools-panel .tools-row { border-color:#45494d; }
+html[data-theme="dark"] .reading-tools-panel .tools-row button,
+html[data-theme="dark"] .reading-tools-panel .tools-wide,
+html[data-theme="dark"] .reading-tools-panel .text-size-controls button { background:#303336; color:#f1f2f2; border-color:#666a6e; }
+html[data-theme="dark"] .reading-tools-panel [aria-pressed="true"] { background:#42464a; }

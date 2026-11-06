@@ -20,7 +20,7 @@
   function initThemeAndReadingTools() {
     const savedTheme = safeGet('lm-theme', 'light');
     document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
-    const savedScale = Number(safeGet('lm-text-scale', '1'));
+    const savedScale = Number(safeGet('lm-text-scale', '1.0625'));
     document.documentElement.style.setProperty('--reading-scale', String(Math.min(1.6, Math.max(1, savedScale || 1))));
     const reduceMotion = safeGet('lm-reduce-motion', 'false') === 'true';
     document.documentElement.classList.toggle('reduce-motion', reduceMotion);
