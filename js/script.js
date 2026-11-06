@@ -77,14 +77,4 @@ document.addEventListener('DOMContentLoaded', () => {
     form.after(status); form.reset();
   }));
 
-  // Accessibility controls (present on each page) with persistent preferences.
-  const sizeClasses = ['text-large', 'text-xlarge', 'text-xxlarge'];
-  let size = Math.max(0, Number(localStorage.getItem('textSize') || 0));
-  const applySize = () => { body.classList.remove(...sizeClasses); if (size > 0) body.classList.add(sizeClasses[size - 1]); };
-  applySize();
-  document.querySelector('#textIncrease')?.addEventListener('click', () => { size = Math.min(3, size + 1); localStorage.setItem('textSize', size); applySize(); });
-  document.querySelector('#textDecrease')?.addEventListener('click', () => { size = Math.max(0, size - 1); localStorage.setItem('textSize', size); applySize(); });
-  document.querySelector('#textReset')?.addEventListener('click', () => { size = 0; localStorage.setItem('textSize', '0'); applySize(); });
-  if (localStorage.getItem('highContrast') === 'true') body.classList.add('high-contrast');
-  document.querySelector('#invertColors')?.addEventListener('click', () => { body.classList.toggle('high-contrast'); localStorage.setItem('highContrast', String(body.classList.contains('high-contrast'))); });
 });
