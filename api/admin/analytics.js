@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   if (req.method !== 'GET') return json(res, 405, { error: 'Method not allowed.' }, { Allow: 'GET' });
   if (!requireAdmin(req, res)) return;
   const connection = databaseUrl();
-  if (!connection) return json(res, 503, { error: 'Add DATABASE_URL to the Vercel environment and apply db/schema.sql to Neon.' });
+  if (!connection) return json(res, 503, { error: 'Add DATABASE_URL_POOLED (or DATABASE_URL) to Vercel and apply db/schema.sql to Neon.' });
   const range = [7, 30, 90].includes(Number(req.query?.range)) ? Number(req.query.range) : 30;
   try {
     const sql = neon(connection);
@@ -37,6 +37,6 @@ export default async function handler(req, res) {
     });
   } catch (error) {
     console.error('Admin analytics query failed:', error?.code || 'unknown');
-    return json(res, 503, { error: 'Analytics database is unavailable. Confirm DATABASE_URL and apply db/schema.sql.' });
+    return json(res, 503, { error: 'Analytics database is unavailable. Confirm DATABASE_URL_POOLED (or DATABASE_URL) and apply db/schema.sql.' });
   }
 }

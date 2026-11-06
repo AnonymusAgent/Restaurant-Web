@@ -40,7 +40,7 @@ Then visit <http://localhost:8000>. This serves the pages, themes and local cont
 
 The SQL schema is ready at [`db/schema.sql`](db/schema.sql). Apply it to the Neon database before enabling analytics. Deploy the repository to Vercel, then set these **server-side** environment variables in Vercel (do not add them to frontend JavaScript or commit them):
 
-- `DATABASE_URL` — Neon pooled connection string
+- `DATABASE_URL_POOLED` — preferred Neon pooled connection string (or set it as `DATABASE_URL`)
 - `ADMIN_PASSWORD` — a strong, unique password (12+ characters) for the admin account
 - `ADMIN_SESSION_SECRET` — a random secret with at least 32 characters for signing admin sessions
 - `ANALYTICS_HASH_SECRET` — a separate random secret with at least 32 characters for hashing pseudonymous analytics IDs
